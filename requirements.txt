@@ -1,0 +1,13 @@
+pandas
+langchain
+openai
+sentence-transformers==2.2.2
+ctransformers== 0.2.5
+huggingface_hub
+flask
+python-dotenv
+PyPDF2
+langchain_community
+reportlab
+langchain_openai
+pinecone-client
