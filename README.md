@@ -1,8 +1,8 @@
 # AI-Medical-ChatBot-using-LLM
 
-#Steps to run the Project:
+# Steps to run the Project:
 
-Clone the Repository:
+### Clone the Repository:
 
 ```bash
 git clone https://github.com/noumanirshad/AI-Medical-ChatBot-using-LLM.git
@@ -49,10 +49,10 @@ python app.py
 ```
 ### Now,
 
-open up localhost:
-Techstack Used:
-Python
-LangChain
-Flask
-Meta Llama2
-Pinecone
+* open up localhost:
+* Techstack Used:
+* Python
+* LangChain
+* Flask
+* Meta Llama2
+* Pinecone
