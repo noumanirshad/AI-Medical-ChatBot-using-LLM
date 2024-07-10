@@ -11,3 +11,6 @@ langchain_community
 reportlab
 langchain_openai
 pinecone-client
+
+
+-e .

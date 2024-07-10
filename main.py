@@ -1,13 +1,22 @@
-from langchain.chat_models import ChatOpenAI
 import os
+from pinecone import Pinecone, ServerlessSpec
+from langchain.vectorstores import Pinecone as LangchainPinecone
 from dotenv import load_dotenv
+from src.helper import load_pdf, Text_Split, download_hugging_face_embd
+from Exception.logger import logging
+from Exception.exception import CustomException
+from store_index import MedicalChatbotIndex
 
-load_dotenv()
 
-mykey =  os.getenv("openai_api")
 
-# Set the Pinecone API key as an environment variable
-os.environ["PINECONE_API_KEY"] = os.getenv("pinecone_api")
+def main():
+    chatbot_index = MedicalChatbotIndex()
+    chatbot_index.setup_index()
+    
+    # Example query
+    query_results = chatbot_index.query_index("What are the symptoms of diabetes?")
+    for result in query_results:
+        print(result.page_content)
 
-print(os.environ["PINECONE_API_KEY"] )
-print(mykey)
+if __name__ == "__main__":
+    main()
