@@ -56,3 +56,26 @@ python app.py
 * Flask
 * Meta Llama2
 * Pinecone
+
+Download the pre-trained model:
+Visit the following link: https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/tree/main
+Download the quantized model file llama-2-7b-chat.ggmlv3.q4_0.bin and place it in the model directory.
+Run indexing script (optional):
+
+python store_index.py
+This script helps pre-process the medical information for faster retrieval during chatbot interactions.
+
+Run the chatbot:
+
+python app.py
+
+Access the chatbot:
+
+Open http://localhost:5000/ in your web browser to interact with the medical chatbot.
+
+This README provides a basic guide to set up and run the chatbot. You may need to modify it based on your specific environment or customize the features depending on your project goals.
+
+Additional Notes
+This chatbot is for informational purposes only and should not be used for medical diagnosis or treatment.
+The accuracy and completeness of the chatbot's responses depend on the quality of the training data.
+For further information or customization, you can refer to the project code and explore relevant documentation for the chosen libraries.
