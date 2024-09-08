@@ -72,10 +72,3 @@ python app.py
 Access the chatbot:
 
 Open http://localhost:5000/ in your web browser to interact with the medical chatbot.
-
-This README provides a basic guide to set up and run the chatbot. You may need to modify it based on your specific environment or customize the features depending on your project goals.
-
-Additional Notes
-This chatbot is for informational purposes only and should not be used for medical diagnosis or treatment.
-The accuracy and completeness of the chatbot's responses depend on the quality of the training data.
-For further information or customization, you can refer to the project code and explore relevant documentation for the chosen libraries.
