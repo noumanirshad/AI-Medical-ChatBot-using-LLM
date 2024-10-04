@@ -1,7 +1,7 @@
 pandas
 langchain
 openai
-sentence-transformers==2.2.2
+sentence-transformers==3.1.0
 ctransformers== 0.2.5
 huggingface_hub
 flask
